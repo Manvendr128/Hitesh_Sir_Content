@@ -50,7 +50,7 @@ const users = [
 ]
 
 // access method for users
-users[1].email;
+console.log(users[0].email);
 console.log(tinderUser)
 
 console.log(Object.keys(tinderUser)) // data type array hota iska
