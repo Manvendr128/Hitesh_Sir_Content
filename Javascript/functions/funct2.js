@@ -9,3 +9,32 @@ if(true){
   var c = 40; 
 }
 {} // scope
+
+// nested scope
+ function one(){
+  const name = "monu";
+
+  function two(){
+    const web  = "youtube";
+    console.log(name);
+  }
+  // console.log(web);
+  two();
+ }
+
+ one();
+
+  // ++++++++++++++++++++++ important +++++++++++++++++
+ addone(15);
+
+ function addone(num){
+  return num + 1;
+ }
+
+//  addtwo(15); // hoisting ??
+
+ const res = function addtwo(num){
+  return num + 10;
+ }
+
+ addtwo(15);
